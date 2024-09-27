@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/* Common CSS */
+
+html{
+	font-size: 62.5%;
+}
+
+*{
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Header CSS Start */
+header{
+	background: linear-gradient(to right, rgba(98,98,98,0), rgba(98,98,98,.7)), url('../images/main.jpg');
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.angled_overlay{
+	position: absolute;
+	bottom: 0;
+	background-color: #fd634e;
+	width: 100%;
+	height: 10rem;
+	transform-origin: right;
+	transform: skewY(-2deg);
+	opacity: .3;
+}
+
+.navbar-toggler{
+	border: 2px solid #f0f0f0 !important;
+}
+
+.nav_menu{
+	margin: 4.5rem 0;
+}
+
+.navbar-brand img{
+	width: 10rem;
+}
+
+.navbar-nav li a{
+	position: relative;
+	color: #ffffff !important;
+	font-size: 1.3rem;
+	margin-left: 7rem;
+}
+
+.navbar-nav li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+.navbar-nav li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.navbar-nav li a::before,
+.navbar-nav li a::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: .2rem;
+	left: 0;
+	background: #42D12B;
+	transform: scaleX(0);
+	transition: all .5s ease-out;
+
+}
+
+.navbar-nav li a:hover::before, 
+.navbar-nav li a:hover::after{
+	transform: scaleX(1);
+}
+/* Header CSS Ends */
+
+
+/* Feature CSS Starts */
+#feature{
+	position: relative;
+	background: #a2ca28;
+}
+
+.commmom_feature{
+	color: #ffffff;
+	padding: 10rem 0;
+}
+
+.commmom_feature i{
+	font-size: 4rem;
+	color: #ffffff;
+	margin-bottom: 1rem;
+}
+
+.commmom_feature h1{
+	font-size: 2.4rem;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+
+.commmom_feature p{
+		font-size: 1.6rem;
+		margin-bottom: 3rem;
+		line-height: 2.5rem;
+}
+
+.commmom_feature a{
+	position: relative;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.4rem;
+}
+
+.commmom_feature a i{
+	position: absolute;
+	font-size: 1.6rem;
+	top: .2rem;
+	right: -2rem;
+	-webkit-transition: all 300ms ease;
+}
+
+.commmom_feature a:hover i{
+	position: absolute;
+	top: .2rem;
+	right: -2.7rem;
+}
+
+/* Feature CSS Ends */
+
+
+/* Fitness Area CSS Starts */
+
+.fitness_area{
+	background: #a2ca28;
+}
+
+.fitness_text{
+	background: #ffffff;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-bottom: 9.5rem;
+}
+
+.fitness_text h3{
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fd634e;
+	padding-top: 6rem;
+}
+
+.fitness_text h2{
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	font-weight: 300;
+	color: #a2ca28;
+}
+
+.fitness_text img{
+	width: 1.2rem;
+	padding-top: 1.5rem;
+}
+
+.fitness_text p{
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	color: #656e74;
+	line-height: 2.5rem;
+	font-size: 1.4rem;
+}
+
+.fitness_text a{
+	text-transform: capitalize;
+	text-decoration: underline;
+	font-size: 1.4rem;
+	color: #a2ca28;
+}
+
+.yoga_back img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+	-webkit-box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+	-moz-box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+}
+
+.yoga_back p{
+	position: absolute;
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #ffffff;
+	bottom: 2.5rem;
+	right: 3rem;
+}
+
+.yoga_back p span{
+	position: absolute;
+	color: #000;
+	right: -2.3rem;
+}
+
+.fitness_watch img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+	-webkit-box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+	-moz-box-shadow: 11px 4px 64px 28px rgba(97,97,97,0.75) inset;
+}
+
+/* Fitness Area CSS Ends */
+
+/* Fitness Area 2 CSS Starts */
+.fitness_area2{
+		background: #fd634e;
+		position: relative;
+}
+
+.fitness_jogging img{
+	width: 100%;
+	height: 100%;
+}
+
+.fitness_beach img{
+	width: 100%;
+	height: 100%;
+}
+
+.lifestyle_text{
+	background: #ffffff;
+	padding: 0 5rem;
+}
+
+.lifestyle_text h3{
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fd634e;
+	padding-top: 5rem;
+}
+
+.lifestyle_text i{
+	position: absolute;
+	font-size: 2.5rem;
+	color: #dbdbdb;
+	right: 3.5rem;
+	top: 7rem;
+
+}
+
+.lifestyle_text h2{
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	font-weight: 300;
+	color: #a2ca28;
+}
+
+.lifestyle_text img{
+	width: 1.2rem;
+	padding-top: 1.5rem;
+}
+
+.lifestyle_text p{
+	margin-top: 1.5rem;
+	color: #656e74;
+	font-size: 1.4rem;
+	padding-bottom: 6.5rem;
+}
+
+.summer_thumb{
+	background: #a2ca28;
+	box-shadow: -5px 3px 14px 6px rgba(153,153,153,0.75);
+-webkit-box-shadow: -5px 3px 14px 6px rgba(153,153,153,0.75);
+-moz-box-shadow: -5px 3px 14px 6px rgba(153,153,153,0.75);
+	padding-left: 4rem;
+}
+
+.summer_thumb h2{
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 4.5rem;
+	padding-top: 5.8rem;
+	text-transform: uppercase;
+
+}
+.summer_thumb p{
+	color: #ffffff;
+	font-weight: 400;
+	padding-top: 2rem;
+	font-size: 1.4rem;
+}
+
+.fruit_first img{
+	width: 100%;
+	height: 100%;
+}
+
+.fruit_second img{
+	width: 100%;
+	height: 100%;
+}
+
+.helping_text{
+	background: #ffffff;
+	padding-left: 4.5rem;
+}
+
+.helping_text h3{
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fd634e;
+	padding-top: 5rem;
+}
+
+.helping_text h2{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	color: #a2ca28;
+}
+
+.helping_text p{
+	margin-top: 1.5rem;
+	color: #656e74;
+	font-size: 1.4rem;
+	padding-bottom: 6.5rem;
+}
+
+.improve_text{
+	position: relative;
+	background: #a2ca28;
+	padding-left: 4.5rem;
+	color: #ffffff;
+}
+
+.improve_text h3{
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding-top: 5rem;
+}
+
+.improve_text img{
+	position: absolute;
+	right: 3rem;
+}
+
+.improve_text h2{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+}
+ 
+ .improve_text p{
+ 	font-weight: 400;
+	padding-top: 2rem;
+	font-size: 1.4rem;
+ }
+/* Fitness Area 2 CSS Ends */
+
+/* Cover CSS Starts */
+.closer{
+	position: relative;
+	background: url('../images/bicycle.jpg'),#8794a1;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100rem;
+	display: grid;
+	place-items: center;
+}
+
+.closer_text_area{
+	color: #ffffff;
+	margin-top: 10rem;
+}
+
+.closer_text_area h1{
+	text-transform: capitalize;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 4.2rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+}
+
+.closer_text_area p{
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 0 20%;
+}
+
+.closer_overlay{
+	position: absolute;
+	bottom: 0rem;
+	transform-origin: left;
+	transform: skewY(3deg);
+	background: #0d1119;
+	width: 100%;
+	height: 40rem;
+}
+
+.closer_overlay2{
+	position: absolute;
+	bottom: 0rem;
+	transform-origin: right;
+	transform: skewY(-3.5deg);
+	background: #0d1119;
+	width: 100%;
+	height: 40rem;
+}
+
+/* Cover CSS Ends */
+
+/* Footer CSS Starts */
+
+.footer{
+	position: relative;
+	background: #0d1119;
+	color: #ffffff;
+	top: 30rem;
+	width: 100%;
+	height: 45vh;
+}
+
+.footer_area{
+	margin-top: 6.3rem;
+}
+
+.footer h3{
+	text-transform: capitalize;
+	margin-bottom: 2.5rem;
+	font-size: 1.4rem;
+}
+
+.footer p{
+	color: #8297a7;
+	font-size: 1.4rem;
+}
+
+.social_area ul li{
+	display: inline-block;
+}
+
+.social_area ul li a{
+	color: #ffffff;
+}
+.social_area ul li a i{
+	text-align: center;
+	margin-right: 2rem;
+	width: 5rem;
+	height: 5rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	line-height: 5rem;
+}
+
+.fa-facebook-f{
+	background: #2e3192;
+}
+
+.fa-twitter{
+	background: #00aeef;
+}
+
+.fa-youtube{
+	background: #ed3123;
+}
+
+.fa-linkedin-in{
+	background: #171a8f;
+}
+
+.newletter_section{
+	margin-top: 2.2rem;
+	margin-right: 6rem;
+}
+
+.newletter_section input:first-child{
+	padding-right: .5rem;
+	padding-left: 2rem;
+	border: none;
+	height: 5rem;
+	font-size: 1.4rem;
+	margin-right: .5rem;
+}
+
+.newletter_section input:nth-child(2){
+	font-size: 1.4rem;
+	border: none;
+	height: 5rem;
+	padding-right: 8rem;
+	padding-left: 2rem;
+	margin-right: .5rem;
+}
+
+.newletter_button{
+	text-transform: capitalize;
+	background: #a2ca28;
+	color: #ffffff;
+	font-size: 1.5rem;
+	padding: 0 3rem;
+	border: none;
+	height: 5rem;
+}
+
+.newletter_button i{
+	margin-left: .8rem;
+}
+
+@media screen and (max-width: 996px){
+	.commmom_feature{
+		text-align: center;
+	}
+
+	.footer{
+		bottom: -30rem;
+	}
+
+	.newletter_section input, .newletter_section button
+	{
+		width: 100% !important;
+		margin-bottom: .5rem;
+	}
+	#navbarMenu ul li a{
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.6rem;
+	}
+
+	.navbar-nav li a:hover::before, 
+	.navbar-nav li a:hover::after{
+	transform: scaleX(0);
+}
+	.navbar-nav li a:hover{
+	color: #ff8c12 !important;
+}
+
+}
+	/* .close_btn, .togggler_lines{
+	
+	position: absolute;
+	display: block;
+	font-size: 3rem;
+	color: #fff;
+	right: -7%;
+	}
+
+	#navbarMenu{
+		display: block;
+		position: fixed;
+		background: #000;
+		text-align: center;
+		right: -10%;
+		bottom: 70%;
+		
+	}
+
+	#navbarMenu ul li a{
+		margin-bottom: 1rem;
+		font-size: 2.5rem;
+	} */
+/* Footer CSS Ends */
